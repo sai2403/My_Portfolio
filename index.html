@@ -70,7 +70,7 @@
     <section id="home" class="home">
       <div class="home-content">
         <h2>Welcome to my portfolio</h2>
-        <p>Hey, I’m Sai Yaswanth — Full-Stack Developer & Data Science Enthusiast</p>
+        <h1>I’m a <span id="typewriter"></span><span class="cursor">|</span></h1>
         <p>Passionate about building innovative web applications and leveraging data to drive insights.</p>
       </div>
       <div class="social-icons">
@@ -80,7 +80,6 @@
       </div>
     </section>
   </div>
-
 
   <div class="introduction">
   <section id="about" class="about">
@@ -97,7 +96,7 @@
           <li>📊 Adept at visualizing data to tell compelling stories</li>
           <li>🚀 Built real-world solutions with AI, ML, and modern frameworks</li>
         </ul>
-        <a href="Sai_Yaswanth_Resume.pdf" class="btn-resume" download>Download Resume</a>
+        <a href="Sai_Yaswanth_Chithirala_Resume.docx" class="btn-resume" download>Download Resume</a>
       </div>
     </div>
   </section>
@@ -147,36 +146,43 @@
 
    <section id="projects" class="projects-section">
     <h2>Projects</h2>
+    <div class="filter-buttons">
+  <button onclick="filterProjects('all')">All</button>
+  <button onclick="filterProjects('Web Dev')">Web Dev</button>
+  <button onclick="filterProjects('Data Science')">Data Science</button>
+  <button onclick="filterProjects('Analytics')">Analytics</button>
+</div>
+
     <div class="projects-grid">
-      <div class="project-card">
+      <div class="project-card" data-tech="Data Science">
         <img src="Project1.jpg" alt="Document Q&A System">
         <div class="project-content">
           <h4>Document Q&A System</h4>
           <p>Built using Large Language Models and Retrieval-Augmented Generation, this chatbot answers questions from uploaded documents with 87% accuracy.</p>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-tech="Web Dev">
         <img src="Project2.jpg" alt="Employee Attendance System">
         <div class="project-content">
           <h4>Employee Attendance System</h4>
           <p>A full-stack solution using React & PHP with facial recognition, GPS check-ins, and OTP-based password recovery.</p>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-tech="Analytics">
         <img src="Project3.jpg" alt="BlinkIt Sales Data Analysis">
         <div class="project-content">
           <h4>BlinkIt Sales Data Analysis</h4>
           <p>Analyzed over 2,000 records and visualized key business insights through dynamic Power BI dashboards.</p>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-tech="Web Dev">
         <img src="Project4.jpg" alt="Play Link App">
         <div class="project-content">
           <h4>Play Link – Sports Team App</h4>
           <p>React app for sports enthusiasts to find teammates, book venues, and form teams with a clean, responsive UI.</p>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-tech="Data Science">
         <img src="project5.jpg" alt="Disease Prediction Model">
         <div class="project-content">
           <h4>Disease Prediction Model</h4>
@@ -198,8 +204,8 @@
       </form>
       <div class="contact-details">
         <h4>Get in Touch</h4>
-        <p><i class="fas fa-envelope"></i>Email</p>
-        <p><i class="fas fa-phone"></i>Call me</p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:syaswanth486@gmail.com">Email</a></p>
+        <p><i class="fas fa-phone"></i><a href="call to:+91 9849405491">Call me</a></p>
         <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/-yaswanth" target="_blank">LinkedIn</a></p>
       </div>
     </div>
@@ -208,15 +214,9 @@
   <div class="footer">
     <p>&copy; 2025 Sai Yaswanth Chithirala | Giddalur</p>
   </div>
-  <script>
-    function toggleMenu() {
-      const navLinks = document.getElementById('nav-links');
-      navLinks.classList.toggle('active');
-    }
-    function closeMenu() {
-      const navLinks = document.getElementById('nav-links');
-      navLinks.classList.remove('active');
-    }
-  </script>
+  <script src="script.js"></script>
+</script>
 </body>
 </html>
+
+
